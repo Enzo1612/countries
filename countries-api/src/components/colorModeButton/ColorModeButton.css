@@ -1,0 +1,49 @@
+:root {
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --input: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+}
+
+.colorButtonContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 5vw;
+  gap: 1vw;
+}
+
+#colorButtonP {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#bsmoon {
+  margin-top: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#bsmoonfill {
+  display: none;
+  margin-top: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  #colorButtonP {
+    font-size: 0.8rem;
+  }
+  #bsmoon,
+  #bsmoonfill {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+}

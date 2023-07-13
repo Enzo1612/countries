@@ -1,0 +1,56 @@
+:root {
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --input: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+}
+
+.countriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleCountryContainer {
+  margin-top: 1px;
+  height: calc(90vh - 1px);
+}
+
+#backButton {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  height: 5vh;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  background: var(--elements);
+  margin: 10vh 0 10vh 5vw;
+}
+
+#bsarrowbarleft {
+  font-size: 1.5rem;
+  margin-top: 6px;
+  margin-left: 1vw;
+}
+
+@media (max-width: 900px) {
+  #backButton {
+    width: 20vw;
+    margin: 5vh 0 5vh 5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  #backButton {
+    width: 30vw;
+  }
+}

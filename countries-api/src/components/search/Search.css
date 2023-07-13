@@ -1,0 +1,229 @@
+:root {
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --input: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4vh 5vw;
+  height: 6vh;
+  width: 30vw;
+  background-color: var(--elements);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow: hidden;
+}
+
+#countrySearch {
+  width: 24vw;
+  height: 4vh;
+  border: none;
+  font-size: 1.5rem;
+  background-color: var(--elements);
+  color: var(--text);
+  margin-left: 2vw;
+}
+
+#countrySearch::placeholder {
+  margin-left: 2vw;
+  color: var(--input);
+}
+
+#countrySearch:focus {
+  outline: none;
+}
+
+#aisearch {
+  font-size: 1.8rem;
+  width: 4vw;
+  text-align: center;
+  margin-top: 6px;
+  cursor: pointer;
+  color: var(--input);
+  background-color: var(--elements);
+  border: none;
+}
+
+.filterContainer {
+  margin-right: 5vw;
+  height: 6vh;
+  width: 18vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: var(--elements);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filterP {
+  margin-left: 2vw;
+  font-size: 1.5rem;
+}
+
+#bidownarrow {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+.regionsContainer {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 18vw;
+  height: 25vh;
+  background-color: var(--elements);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  z-index: 100;
+}
+
+.region {
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .filterP {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .filterP {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .filterP {
+    font-size: 0.9rem;
+  }
+
+  #bidownarrow {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .filterContainer {
+    width: 25vw;
+  }
+
+  .searchBarContainer {
+    width: 40vw;
+  }
+
+  #countrySearch {
+    font-size: 1.2rem;
+  }
+
+  .filterP {
+    font-size: 1rem;
+  }
+
+  #bidownarrow {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .filterContainer {
+    width: 30vw;
+  }
+
+  .searchBarContainer {
+    width: 45vw;
+  }
+
+  #countrySearch {
+    font-size: 1rem;
+  }
+
+  .filterP {
+    font-size: 1rem;
+  }
+
+  #bidownarrow {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .filterContainer {
+    width: 30vw;
+  }
+
+  .searchBarContainer {
+    width: 45vw;
+  }
+
+  #countrySearch {
+    font-size: 0.8rem;
+  }
+
+  .filterP {
+    font-size: 0.8rem;
+  }
+
+  #bidownarrow {
+    font-size: 0.6rem;
+  }
+
+  #aisearch {
+    margin-right: 3vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .filterContainer {
+    width: 35vw;
+  }
+
+  .searchBarContainer {
+    width: 45vw;
+  }
+
+  #countrySearch {
+    font-size: 0.6rem;
+  }
+
+  .filterP {
+    font-size: 0.7rem;
+  }
+
+  #bidownarrow {
+    font-size: 0.6rem;
+    margin-left: 2vw;
+  }
+
+  #aisearch {
+    margin-right: 3vw;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+}

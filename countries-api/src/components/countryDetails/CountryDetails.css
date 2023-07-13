@@ -1,0 +1,123 @@
+.singleCountryDetailsContainer {
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5vw;
+}
+
+.countryDetailsTextContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countryTop {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+.countryLeft,
+.countryRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.countryBottom {
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+.countryDetailsImage {
+  width: 40vw;
+  height: fit-content;
+}
+
+.countryBorderContainer {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.countryBorder {
+  width: 5vw;
+  text-align: center;
+  background-color: var(--elements);
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .countryDetailsTextContainer {
+    height: 70vh;
+    justify-content: space-around;
+  }
+  #singleCountryName {
+    font-size: 1rem;
+  }
+  .singleCountryDetailsP {
+    font-size: 0.6rem;
+  }
+  .countryTop {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10vw;
+  }
+  .countryLeft {
+    margin-right: 5vw;
+  }
+  .countryBottom {
+    margin-left: 10vw;
+    margin-top: 6vh;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .countryDetailsImage {
+    width: 60vw;
+    height: 30vh;
+    object-fit: fill;
+    margin-top: 15vh;
+  }
+  .singleCountryDetailsContainer {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 3vh;
+  }
+  #singleCountryName {
+    font-size: 1rem;
+  }
+  .singleCountryDetailsP {
+    font-size: 0.6rem;
+  }
+  .countryTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-left: 0;
+  }
+  .countryLeft {
+    margin-right: 0;
+  }
+  .singleCountryDetailsP {
+    margin-bottom: 1vh;
+  }
+  .countryBottom {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 3vh;
+    font-size: 0.6rem;
+  }
+}

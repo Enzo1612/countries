@@ -1,0 +1,39 @@
+:root {
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --input: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+}
+
+.navbarContainer {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--elements);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navbarContainer > h1 {
+  margin-left: 5vw;
+}
+
+@media (max-width: 650px) {
+  .navbarContainer > h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbarContainer > h1 {
+    font-size: 1rem;
+  }
+}
